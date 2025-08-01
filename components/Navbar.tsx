@@ -28,13 +28,15 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg" : "bg-transparent"
-      }`}
-    >
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.6 }}
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-[-20px_0_40px_#4070A1] ${
+    scrolled
+      ? "bg-white/30 backdrop-blur-md border-b border-white/20 shadow-lg"
+      : "bg-white/10 backdrop-blur-sm border-b border-white/10"
+  }`}
+>
       <div className="container mx-auto px-3 sm:px-4 md:px-6">
         <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
@@ -44,7 +46,7 @@ export default function Navbar() {
               alt="A.N.A Property Maintenance Services"
               width={120}
               height={60}
-              className="h-10 sm:h-12 md:h-14 w-auto"
+             className="h-10 sm:h-12 md:h-14 w-auto filter brightness-125 hover:brightness-110 transition-all duration-300 shadow-[0_0_10px_#305A81,0_0_30px_#305A81] rounded-lg"
               priority
             />
           </motion.div>

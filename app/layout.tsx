@@ -4,9 +4,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'ANA - Professional Property Cleaning Services',
+  description: 'Professional property cleaning services in Vancouver, BC. A.N.A Property Maintenance Services Ltd. offers reliable and affordable cleaning solutions for homes and businesses.',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({
